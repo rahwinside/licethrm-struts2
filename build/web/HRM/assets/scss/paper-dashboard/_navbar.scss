@@ -19,46 +19,46 @@
 
 
     &.bg-white{
-      .input-group .form-control,
-      .input-group.no-border .form-control{
-        color: $default-color;
+        .input-group .form-control,
+        .input-group.no-border .form-control{
+            color: $default-color;
 
-        @include placeholder(){
-          color: $default-color;
-        };
-      }
-      .input-group-prepend .input-group-text i,
-      .input-group-append .input-group-text i{
-        color: $default-color;
-        opacity: .5;
-      }
+            @include placeholder(){
+                color: $default-color;
+            };
+        }
+        .input-group-prepend .input-group-text i,
+        .input-group-append .input-group-text i{
+            color: $default-color;
+            opacity: .5;
+        }
     }
 
     .form-group,
     .input-group{
-      margin: 0;
-      margin-left: -3px;
-      margin-right: 5px;
+        margin: 0;
+        margin-left: -3px;
+        margin-right: 5px;
 
-      .form-group-addon,
-      .input-group-prepend .input-group-text,
-      .input-group-append .input-group-text{
-        color: $default-color;
-
-        i {
-          opacity: 1;
-        }
-      }
-
-      &.no-border{
-        .form-control{
-          color: $default-color;
-
-          @include placeholder(){
+        .form-group-addon,
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text{
             color: $default-color;
-          };
+
+            i {
+                opacity: 1;
+            }
         }
-      }
+
+        &.no-border{
+            .form-control{
+                color: $default-color;
+
+                @include placeholder(){
+                    color: $default-color;
+                };
+            }
+        }
     }
 
     p{
@@ -170,9 +170,9 @@
         }
 
         .nav-item.active .nav-link:not(.btn),
-        .nav-item .nav-link:not(.btn):focus,
-        .nav-item .nav-link:not(.btn):hover,
-        .nav-item .nav-link:not(.btn):active{
+            .nav-item .nav-link:not(.btn):focus,
+            .nav-item .nav-link:not(.btn):hover,
+            .nav-item .nav-link:not(.btn):active{
             border-radius: $border-radius-small;
             color: $default-color;
         }
@@ -217,33 +217,33 @@
     }
 
     &.navbar-transparent{
-      background-color: $transparent-bg !important;
-      box-shadow: none;
-      border-bottom: 1px solid #ddd;
+        background-color: $transparent-bg !important;
+        box-shadow: none;
+        border-bottom: 1px solid #ddd;
 
-      a:not(.dropdown-item):not(.btn){
-        color: $default-color;
+        a:not(.dropdown-item):not(.btn){
+            color: $default-color;
 
-        &.disabled{
-          opacity: .5;
-          color: $default-color;
-         }
-       }
+            &.disabled{
+                opacity: .5;
+                color: $default-color;
+            }
+        }
 
-       .button-bar{
-           background: $default-color;
-       }
+        .button-bar{
+            background: $default-color;
+        }
 
-      .nav-item .nav-link:not(.btn){
-        color: $default-color;
-      }
-      .nav-item.active .nav-link:not(.btn),
-      .nav-item .nav-link:not(.btn):focus,
-      .nav-item .nav-link:not(.btn):hover,
-      .nav-item .nav-link:not(.btn):focus:hover,
-      .nav-item .nav-link:not(.btn):active {
-        color: $primary-color;
-      }
+        .nav-item .nav-link:not(.btn){
+            color: $default-color;
+        }
+        .nav-item.active .nav-link:not(.btn),
+            .nav-item .nav-link:not(.btn):focus,
+            .nav-item .nav-link:not(.btn):hover,
+            .nav-item .nav-link:not(.btn):focus:hover,
+            .nav-item .nav-link:not(.btn):active {
+            color: $primary-color;
+        }
     }
 
     &.bg-white {
@@ -261,9 +261,9 @@
         }
 
         .nav-item.active .nav-link:not(.btn),
-        .nav-item .nav-link:not(.btn):focus,
-        .nav-item .nav-link:not(.btn):hover,
-        .nav-item .nav-link:not(.btn):active{
+            .nav-item .nav-link:not(.btn):focus,
+            .nav-item .nav-link:not(.btn):hover,
+            .nav-item .nav-link:not(.btn):active{
             color: $info-color;
         }
 
@@ -273,11 +273,11 @@
     }
 
     .navbar-collapse {
-      .nav-item {
-        a {
-          font-size: $font-size-base;
+        .nav-item {
+            a {
+                font-size: $font-size-base;
+            }
         }
-      }
     }
 }
 

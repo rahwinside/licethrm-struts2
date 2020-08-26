@@ -1,17 +1,17 @@
 .card{
-  border-radius: $border-radius-extreme;
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  background-color: #FFFFFF;
-  color: $card-black-color;
-  margin-bottom: 20px;
-  position: relative;
-  border: 0 none;
+    border-radius: $border-radius-extreme;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    color: $card-black-color;
+    margin-bottom: 20px;
+    position: relative;
+    border: 0 none;
 
-  -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+    transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
 
     .card-body{
         padding: 15px 15px 10px 15px;
@@ -23,22 +23,22 @@
     }
 
     .card-header{
-      &:not([data-background-color]){
-        background-color: transparent;
-      }
-      padding: 15px 15px 0;
-      border: 0;
+        &:not([data-background-color]){
+            background-color: transparent;
+        }
+        padding: 15px 15px 0;
+        border: 0;
 
-      .card-title{
-          margin-top: 10px;
-      }
+        .card-title{
+            margin-top: 10px;
+        }
     }
 
     .map{
         border-radius: $border-radius-small;
 
         &.map-big{
-          height: 500px;
+            height: 500px;
         }
     }
 
@@ -87,14 +87,14 @@
     }
 
     .numbers {
-      font-size: 2em;
+        font-size: 2em;
     }
 
     .big-title {
-      font-size: 12px;
-      text-align: center;
-      font-weight: 500;
-      padding-bottom: 15px;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 500;
+        padding-bottom: 15px;
     }
 
     label{

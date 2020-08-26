@@ -15,19 +15,19 @@
     @include transition($fast-transition-time, linear);
 
     &:hover,
-    &:focus{
+        &:focus{
         @include opacity(1);
         outline: 0 !important;
     }
     &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-         @include box-shadow(none);
-         outline: 0 !important;
+        &.active,
+        .open > &.dropdown-toggle {
+        @include box-shadow(none);
+        outline: 0 !important;
     }
 
     .badge{
-      margin: 0;
+        margin: 0;
     }
 
     &.btn-icon {
@@ -72,9 +72,9 @@
         }
 
         &:not(.btn-footer) .nc-icon,
-        &:not(.btn-footer) .fa,
-        &:not(.btn-footer) .far,
-        &:not(.btn-footer) .fas{
+            &:not(.btn-footer) .fa,
+            &:not(.btn-footer) .far,
+            &:not(.btn-footer) .fas{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -84,7 +84,7 @@
         }
 
         &.btn-neutral {
-          font-size: 20px;
+            font-size: 20px;
         }
     }
 
@@ -110,44 +110,44 @@
 .btn-outline-warning { @include btn-outline-styles($warning-color, $warning-states-color); }
 .btn-outline-danger  { @include btn-outline-styles($danger-color, $danger-states-color); }
 .btn-outline-neutral { @include btn-outline-styles($white-color, $default-states-color);
-    &:hover,
-    &:focus{
-        color: $default-states-color;
-        background-color: $white-color;
-    }
+                       &:hover,
+                           &:focus{
+                           color: $default-states-color;
+                           background-color: $white-color;
+                       }
 }
 .btn-neutral {
     @include btn-styles($white-color, $white-color);
     color: $default-color;
     &:hover,
-    &:focus{
+        &:focus{
         color: $default-states-color;
     }
 
     &.btn-border{
         &:hover,
-        &:focus{
+            &:focus{
             color: $default-color;
         }
 
         &:active,
-        &.active,
-        .open > &.dropdown-toggle{
-             background-color: $white-color;
-             color: $default-color;
+            &.active,
+            .open > &.dropdown-toggle{
+            background-color: $white-color;
+            color: $default-color;
         }
     }
 
     &.btn-link:active,
-    &.btn-link.active{
+        &.btn-link.active{
         background-color: transparent;
     }
 }
 
 .btn{
-     &:disabled,
-     &[disabled],
-     &.disabled{
+    &:disabled,
+        &[disabled],
+        &.disabled{
         @include opacity(.5);
         pointer-events: none;
     }
@@ -163,27 +163,27 @@
 .btn-link{
     &.disabled,
     &:disabled,
-    &[disabled],
-    fieldset[disabled] & {
+        &[disabled],
+        fieldset[disabled] & {
         &,
         &:hover,
-        &:focus,
-        &.focus,
-        &:active,
-        &.active {
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
             background-color: $transparent-bg;
         }
     }
 }
 
 .btn-link{
-  border: $none;
-  padding: $padding-base-vertical $padding-base-horizontal;
-  background-color: $transparent-bg;
+    border: $none;
+    padding: $padding-base-vertical $padding-base-horizontal;
+    background-color: $transparent-bg;
 }
 
 .btn-lg{
-   @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-large);
+    @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-large);
 }
 .btn-sm{
     @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-small);
@@ -205,14 +205,14 @@
     right: 8px;
 }
 .btn-group {
-  .btn + .btn {
-    margin-left: -3px;
-  }
-  .btn {
-    &:focus {
-      background-color: $info-color !important;
+    .btn + .btn {
+        margin-left: -3px;
     }
-  }
+    .btn {
+        &:focus {
+            background-color: $info-color !important;
+        }
+    }
 }
 
 
@@ -228,7 +228,7 @@
 }
 
 .no-caret {
-  &.dropdown-toggle::after {
-    display: none;
-  }
+    &.dropdown-toggle::after {
+        display: none;
+    }
 }

@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6{
 a{
     color: $primary-color;
     &:hover,
-    &:focus{
+        &:focus{
         color: $primary-color;
     }
 }
@@ -106,23 +106,23 @@ p{
 
 .text-primary,
 a.text-primary:focus, a.text-primary:hover {
-  color: $brand-primary !important;
+    color: $brand-primary !important;
 }
 .text-info,
 a.text-info:focus, a.text-info:hover {
-  color: $brand-info !important;
+    color: $brand-info !important;
 }
 .text-success,
 a.text-success:focus, a.text-success:hover {
-  color: $brand-success !important;
+    color: $brand-success !important;
 }
 .text-warning,
 a.text-warning:focus, a.text-warning:hover {
-  color: $brand-warning !important;
+    color: $brand-warning !important;
 }
 .text-danger,
 a.text-danger:focus, a.text-danger:hover {
-  color: $brand-danger !important;
+    color: $brand-danger !important;
 }
 
 .text-gray,

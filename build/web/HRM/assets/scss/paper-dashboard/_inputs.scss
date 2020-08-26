@@ -1,5 +1,5 @@
 @include placeholder() {
-  color: $dark-gray;
+    color: $dark-gray;
 };
 
 
@@ -33,7 +33,7 @@
     .has-success &,
     .has-error &,
     .has-success &:focus,
-    .has-error &:focus{
+        .has-error &:focus{
         @include box-shadow(none);
     }
 
@@ -89,17 +89,17 @@
 @include input-base-padding($padding-input-vertical, $padding-input-horizontal);
 
 .input-group {
-  &.has-success {
-    .input-group-prepend,
-    .input-group-append {
-      .input-group-text {
-        border: 1px solid $table-line-color;
-        color: $font-color;
-        background-color: $white-color;
-        border-right: none;
-      }
+    &.has-success {
+        .input-group-prepend,
+        .input-group-append {
+            .input-group-text {
+                border: 1px solid $table-line-color;
+                color: $font-color;
+                background-color: $white-color;
+                border-right: none;
+            }
+        }
     }
-  }
 }
 
 .form-group.no-border,
@@ -110,8 +110,8 @@
         background-color: $opacity-gray-3;
         border: medium none;
         &:focus,
-        &:active,
-        &:active{
+            &:active,
+            &:active{
             border: medium none;
             background-color: $opacity-gray-5;
         }
@@ -145,65 +145,65 @@
 }
 
 .input-group.has-danger {
-  .input-group-prepend {
-    border-radius: $border-radius-base;
-    .input-group-text {
-      border: 1px solid $danger-color;
-      border-right: none;
+    .input-group-prepend {
+        border-radius: $border-radius-base;
+        .input-group-text {
+            border: 1px solid $danger-color;
+            border-right: none;
+        }
     }
-  }
-  .error {
-    display: block;
-    width: 100%;
-    color: $danger-color;
-    margin-top: 3px;
-  }
+    .error {
+        display: block;
+        width: 100%;
+        color: $danger-color;
+        margin-top: 3px;
+    }
 }
 
 .input-group.has-success {
-  .input-group-prepend {
-    border-radius: $border-radius-base;
-    .input-group-text {
-      // border: 1px solid $success-color;
-      border-right: none;
+    .input-group-prepend {
+        border-radius: $border-radius-base;
+        .input-group-text {
+            // border: 1px solid $success-color;
+            border-right: none;
+        }
     }
-  }
 }
 
 
 .input-group-focus{
-  .input-group-prepend .input-group-text,
-  .input-group-append .input-group-text{
-    background-color: $white-bg;
-    border-color: $dark-gray;
-  }
-
-  &.no-border{
     .input-group-prepend .input-group-text,
     .input-group-append .input-group-text{
-      background-color: $opacity-gray-5;
+        background-color: $white-bg;
+        border-color: $dark-gray;
     }
-  }
 
-  &.has-danger {
-    .input-group-append,
-    .input-group-prepend {
-      .input-group-text {
-        background-color: $danger-input-bg;
-      }
+    &.no-border{
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text{
+            background-color: $opacity-gray-5;
+        }
     }
-  }
 
-  &.has-success {
-    .input-group-append,
-    .input-group-prepend {
-      .input-group-text {
-        background-color: $success-input-bg;
-        border: 1px solid $success-color;
-        border-right: none;
-      }
+    &.has-danger {
+        .input-group-append,
+        .input-group-prepend {
+            .input-group-text {
+                background-color: $danger-input-bg;
+            }
+        }
     }
-  }
+
+    &.has-success {
+        .input-group-append,
+        .input-group-prepend {
+            .input-group-text {
+                background-color: $success-input-bg;
+                border: 1px solid $success-color;
+                border-right: none;
+            }
+        }
+    }
 }
 
 .input-group-append .input-group-text,
@@ -215,30 +215,30 @@
     border-bottom-right-radius: $border-radius-base;
 
     & i{
-      opacity: .5;
+        opacity: .5;
     }
 
     @include transition-input-focus-color();
 
     .has-danger &{
-      background-color: $danger-input-bg;
+        background-color: $danger-input-bg;
     }
     .has-success &{
-      background-color: $success-input-bg;
+        background-color: $success-input-bg;
     }
     .has-danger.input-group-focus &{
-      background-color: $white-color;
-      color: $danger-color;
+        background-color: $white-color;
+        color: $danger-color;
     }
     .has-success.input-group-focus &{
-      background-color: $white-color;
-      color: $success-color;
+        background-color: $white-color;
+        color: $success-color;
     }
     .has-danger .form-control:focus + &{
-      color: $danger-color;
+        color: $danger-color;
     }
     .has-success .form-control:focus + &{
-      color: $success-color;
+        color: $success-color;
     }
 
     & + .form-control,
@@ -254,15 +254,15 @@
 
 .input-group-append,
 .input-group-prepend{
-  margin: 0;
+    margin: 0;
 }
 
 
 .input-group-append .input-group-text{
-  border-left: none;
+    border-left: none;
 }
 .input-group-prepend .input-group-text{
-  border-right: none;
+    border-right: none;
 }
 
 .input-group,
@@ -274,9 +274,9 @@
         margin-top: 9px;
     }
     &.has-danger {
-      .error {
-        color: $danger-color;
-      }
+        .error {
+            color: $danger-color;
+        }
     }
 }
 .input-group[disabled]{
@@ -353,15 +353,15 @@ textarea.form-control{
 
 // Input files - hide actual input - requires specific markup in the sample.
 .form-group input[type=file] {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
 }
 
 .form-text{
@@ -387,8 +387,8 @@ textarea.form-control{
         margin-bottom: 15px;
 
         .form-check:first-child{
-           margin-top: 8px;
-       }
+            margin-top: 8px;
+        }
     }
 
     .label-on-right{

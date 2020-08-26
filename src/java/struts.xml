@@ -5,8 +5,29 @@
 <struts>
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
+        <action name="index">
+            <result>/HRM/addemployee.jsp</result>
+        </action>
+        <action name="addemployeepage">
+            <result>/HRM/addemployee.jsp</result>
+        </action>
+        <action name="deleteemployeepage">
+            <result>/HRM/deleteemployee.jsp</result>
+        </action>
+        <action name="searchemployeepage">
+            <result>/HRM/searchemployee.jsp</result>
+        </action>
+        <action name="allemployeepage" class="HRM.AllEmployeeAction">
+            <result>/HRM/allemployee.jsp</result>
+        </action>        
+
         <action name="addemployee" class="HRM.AddEmployeeAction">
-            <result name="success">/HRM/addemployee.jsp</result>
+            <result name="success">/HRM/success.html</result>
+            <result name="error">/HRM/error.html</result>
+        </action>
+        <action name="deleteemployee" class="HRM.DeleteEmployeeAction">
+            <result name="success">/HRM/success.html</result>
+            <result name="error">/HRM/error.html</result>
         </action>
     </package>
 </struts>

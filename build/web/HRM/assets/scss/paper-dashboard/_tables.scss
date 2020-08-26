@@ -1,16 +1,16 @@
 .table{
 
     .img-wrapper{
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
     }
 
     .img-row{
-      max-width: 60px;
-      width: 60px;
+        max-width: 60px;
+        width: 60px;
     }
 
     .form-check{
@@ -28,7 +28,7 @@
     }
 
     small,.small{
-      font-weight: 300;
+        font-weight: 300;
     }
 
     .card-tasks .card-body &{
@@ -45,63 +45,63 @@
         }
     }
 
-   > thead > tr > th{
-       font-size: 14px;
-       font-weight: $font-weight-bold;
-       padding-bottom: 0;
-       text-transform: uppercase;
-       border: 0;
-   }
+    > thead > tr > th{
+        font-size: 14px;
+        font-weight: $font-weight-bold;
+        padding-bottom: 0;
+        text-transform: uppercase;
+        border: 0;
+    }
 
-   .radio,
-   .checkbox{
-       margin-top: 0;
-       margin-bottom: 0;
-       padding: 0;
-       width: 15px;
+    .radio,
+    .checkbox{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        width: 15px;
 
-       .icons{
-           position: relative;
-       }
+        .icons{
+            position: relative;
+        }
 
         label{
             &:after,
-            &:before{
+                &:before{
                 top: -17px;
                 left: -3px;
             }
         }
-   }
-   > thead > tr > th,
-   > tbody > tr > th,
-   > tfoot > tr > th,
-   > thead > tr > td,
-   > tbody > tr > td,
-   > tfoot > tr > td{
-       padding: 12px 7px;
-       vertical-align: middle;
-   }
+    }
+    > thead > tr > th,
+    > tbody > tr > th,
+    > tfoot > tr > th,
+    > thead > tr > td,
+    > tbody > tr > td,
+    > tfoot > tr > td{
+        padding: 12px 7px;
+        vertical-align: middle;
+    }
 
-   .th-description{
-       max-width: 150px;
-   }
-   .td-price{
-       font-size: 26px;
-       font-weight: $font-weight-light;
-       margin-top: 5px;
-       position: relative;
-       top: 4px;
-       text-align: right;
-   }
-   .td-total{
+    .th-description{
+        max-width: 150px;
+    }
+    .td-price{
+        font-size: 26px;
+        font-weight: $font-weight-light;
+        margin-top: 5px;
+        position: relative;
+        top: 4px;
+        text-align: right;
+    }
+    .td-total{
         font-weight: $font-weight-bold;
         font-size: $font-size-h5;
         padding-top: 20px;
         text-align: right;
     }
 
-   .td-actions .btn{
-    margin: 0px;
+    .td-actions .btn{
+        margin: 0px;
     }
 
     > tbody > tr{
@@ -132,9 +132,9 @@
         }
     }
     .td-number{
-       font-weight: $font-weight-light;
-       font-size: $font-size-h4;
-   }
+        font-weight: $font-weight-light;
+        font-size: $font-size-h4;
+    }
     .td-name{
         min-width: 200px;
     }
@@ -160,8 +160,8 @@
 }
 
 .table-responsive{
-  overflow: scroll;
-  padding-bottom: 10px;
+    overflow: scroll;
+    padding-bottom: 10px;
 }
 
 #tables .table-responsive{
@@ -169,5 +169,5 @@
 }
 
 .table-hover>tbody>tr:hover{
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
