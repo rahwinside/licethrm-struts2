@@ -1,6 +1,6 @@
-Sample HR Application using Struts2 Framework
+# Sample HR Application using Struts2 Framework
 
-File Organization:
+### File Organization:
 
 ```\licethrm-struts2>tree
 Folder PATH listing
@@ -80,3 +80,5 @@ C:.
     │               └───plugins
     └───WEB-INF
 ```
+Use the MySQL ODBC Driver 8.0.^ wherever necessary.
+
