@@ -33,7 +33,7 @@ public class AllEmployeeAction implements Action {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/employees?useTimeZone=true&serverTimezone=UTC&autoReconnect=true&useSSL=false", "root", "vcvra-1002");
+                    "jdbc:mysql://localhost:3306/employees?useTimeZone=true&serverTimezone=UTC&autoReconnect=true&useSSL=false", "root", "password");
 
             PreparedStatement ps = con.prepareStatement("SELECT * FROM employee_details");
             ResultSet rs = ps.executeQuery();
