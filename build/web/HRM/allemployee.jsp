@@ -63,15 +63,26 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3 class="description">List of all employees</h3>
-                            <s:iterator value="employeeList">  
-                                <fieldset>  
-                                    <s:property value="employeeID"/><br/>  
-                                    <s:property value="employeeName"/><br/>  
-                                    <s:property value="employeeDept"/><br/>  
-                                    <s:property value="employeePhone"/><br/>
-                                    <s:property value="employeeEmail"/><br/>  
-                                </fieldset>  
-                            </s:iterator>  
+                            <table class="table-bordered table-striped" style="width:100%">
+                                <tr>
+                                    <th>Employee ID</th>
+                                    <th>Employee Name</th>
+                                    <th>Department</th>
+                                    <th>Phone</th>
+                                    <th>Email ID</th>
+                                </tr>
+                                <s:iterator value="employeeList">
+                                    <tr>
+                                        <fieldset>
+                                            <td><s:property value="employeeID"/></td>
+                                            <td><s:property value="employeeName"/></td>  
+                                            <td><s:property value="employeeDept"/></td>  
+                                            <td><s:property value="employeePhone"/></td>
+                                            <td><s:property value="employeeEmail"/></td>  
+                                        </fieldset>  
+                                    </tr>
+                                </s:iterator>  
+                            </table>
                         </div>
                     </div>
                 </div>

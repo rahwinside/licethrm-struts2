@@ -44,7 +44,7 @@ public class AllEmployeeAction implements Action {
                 employee.setEmployeeName(rs.getString(2));
                 employee.setEmployeeDept(rs.getString(3));
                 employee.setEmployeePhone(rs.getString(4));
-                employee.setEmployeeEmail(rs.getString(4));
+                employee.setEmployeeEmail(rs.getString(5));
                 employeeList.add(employee);
             }
 
