@@ -2,7 +2,7 @@ Sample HR Application using Struts2 Framework
 
 File Organization:
 
-\licethrm-struts2>tree
+```\licethrm-struts2>tree
 Folder PATH listing
 Volume serial number is XXXX-XXXX
 C:.
@@ -79,3 +79,4 @@ C:.
     │               ├───mixins
     │               └───plugins
     └───WEB-INF
+```
