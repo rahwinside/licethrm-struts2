@@ -62,7 +62,8 @@
                 <div class="content">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="description">Your content here</h3>
+                            <h3>Welcome to LICET HR Management Application</h3>
+                            <h5>Please select an option</h5>
                         </div>
                     </div>
                 </div>

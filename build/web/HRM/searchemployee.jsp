@@ -63,17 +63,22 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3 class="description">Search Employee</h3>
-                            <s:form action="searchemployeebyid">
-                                <h5 class="description">Search by Employee ID</h5>
-                                <s:textfield name="employeeID" cssClass="input-group-text" label="Employee ID" style="text-align: left"/>
-                                <s:submit value="Search by ID"></s:submit>
-                            </s:form>
-                            <br/>
-                            <s:form action="searchemployeebyname">
-                                <h5 class="description">Search by Employee Name</h5>
-                                <s:textfield name="employeeName" cssClass="input-group-text" label="Employee Name" style="text-align: left"/>
-                                <s:submit value="Search by name"></s:submit>
-                            </s:form>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <s:form action="searchemployeebyid">
+                                        <h5 class="description">Search by Employee ID</h5>
+                                        <s:textfield name="employeeID" cssClass="input-group-text" label="Employee ID" style="text-align: left"/>
+                                        <s:submit value="Search by ID"></s:submit>
+                                    </s:form>
+                                </div>
+                                <div class="col-sm">
+                                    <s:form action="searchemployeebyname">
+                                        <h5 class="description">Search by Employee Name</h5>
+                                        <s:textfield name="employeeName" cssClass="input-group-text" label="Employee Name" style="text-align: left"/>
+                                        <s:submit value="Search by name"></s:submit>
+                                    </s:form>
+                                </div>
+                            </div>
                             <br/>
                             <table class="table-bordered table-striped" style="width:100%">
                                 <tr>

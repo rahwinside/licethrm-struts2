@@ -6,7 +6,7 @@
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
         <action name="index">
-            <result>/HRM/addemployee.jsp</result>
+            <result>/HRM/index.jsp</result>
         </action>
         <action name="addemployeepage">
             <result>/HRM/addemployee.jsp</result>
