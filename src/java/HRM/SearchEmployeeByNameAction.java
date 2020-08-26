@@ -16,9 +16,18 @@ import java.util.ArrayList;
  *
  * @author rah
  */
-public class AllEmployeeAction implements Action {
+public class SearchEmployeeByNameAction implements Action {
 
+    String employeeName;
     ArrayList<EmployeeAdapter> employeeList = new ArrayList<EmployeeAdapter>();
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
 
     public ArrayList<EmployeeAdapter> getEmployeeList() {
         return employeeList;
@@ -35,9 +44,9 @@ public class AllEmployeeAction implements Action {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/employees?useTimeZone=true&serverTimezone=UTC&autoReconnect=true&useSSL=false", "root", "vcvra-1002");
 
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM employee_details");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM employee_details WHERE employeeName LIKE '%" + this.employeeName + "%'");
             ResultSet rs = ps.executeQuery();
-
+            
             while (rs.next()) {
                 EmployeeAdapter employee = new EmployeeAdapter();
                 employee.setEmployeeID(rs.getString(1));

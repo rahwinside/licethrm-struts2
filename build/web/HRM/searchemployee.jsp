@@ -63,26 +63,38 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3 class="description">Search Employee</h3>
-                            <form>
+                            <s:form action="searchemployeebyid">
                                 <h5 class="description">Search by Employee ID</h5>
-                                <table>
-                                    <tr>
-                                        <td><p>Employee ID:</p></td>
-                                        <td><input class="input-group-text" style="text-align: left" type="text"><br></td>
-                                    </tr>
-                                </table>
-                                <input type="submit" value="Search Employee">
-                            </form>
-                            <form>
+                                <s:textfield name="employeeID" cssClass="input-group-text" label="Employee ID" style="text-align: left"/>
+                                <s:submit value="Search by ID"></s:submit>
+                            </s:form>
+                            <br/>
+                            <s:form action="searchemployeebyname">
                                 <h5 class="description">Search by Employee Name</h5>
-                                <table>
+                                <s:textfield name="employeeName" cssClass="input-group-text" label="Employee Name" style="text-align: left"/>
+                                <s:submit value="Search by name"></s:submit>
+                            </s:form>
+                            <br/>
+                            <table class="table-bordered table-striped" style="width:100%">
+                                <tr>
+                                    <th>Employee ID</th>
+                                    <th>Employee Name</th>
+                                    <th>Department</th>
+                                    <th>Phone</th>
+                                    <th>Email ID</th>
+                                </tr>
+                                <s:iterator value="employeeList">
                                     <tr>
-                                        <td><p>Employee Name:</p></td>
-                                        <td><input class="input-group-text" style="text-align: left" type="text"><br></td>
+                                        <fieldset>
+                                            <td><s:property value="employeeID"/></td>
+                                            <td><s:property value="employeeName"/></td>  
+                                            <td><s:property value="employeeDept"/></td>  
+                                            <td><s:property value="employeePhone"/></td>
+                                            <td><s:property value="employeeEmail"/></td>  
+                                        </fieldset>  
                                     </tr>
-                                </table>
-                                <input type="submit" value="Search Employee">
-                            </form>
+                                </s:iterator>  
+                            </table>
                         </div>
                     </div>
                 </div>

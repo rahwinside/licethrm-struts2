@@ -28,7 +28,7 @@ public class DeleteEmployeeAction implements Action {
             try {
                 Statement st = con.createStatement();
                 int value = st
-                        .executeUpdate("DELETE FROM employee_details WHERE employeeID = '" + employeeID + "'");
+                        .executeUpdate("DELETE FROM employee_details WHERE employeeID = '" + this.employeeID + "'");
                 System.out.println("1 row affected" + value);
                 con.close();
                 if (value > 0) {

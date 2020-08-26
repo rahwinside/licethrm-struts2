@@ -16,9 +16,19 @@ import java.util.ArrayList;
  *
  * @author rah
  */
-public class AllEmployeeAction implements Action {
+public class SearchEmployeeByIdAction implements Action {
 
+    String employeeID;
     ArrayList<EmployeeAdapter> employeeList = new ArrayList<EmployeeAdapter>();
+
+    public String getEmployeeID() {
+        return employeeID;
+    }
+
+    public void setEmployeeID(String employeeID) {
+        this.employeeID = employeeID;
+    }
+    
 
     public ArrayList<EmployeeAdapter> getEmployeeList() {
         return employeeList;
@@ -35,9 +45,9 @@ public class AllEmployeeAction implements Action {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/employees?useTimeZone=true&serverTimezone=UTC&autoReconnect=true&useSSL=false", "root", "vcvra-1002");
 
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM employee_details");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM employee_details WHERE employeeID = '" + this.employeeID + "'");
             ResultSet rs = ps.executeQuery();
-
+            
             while (rs.next()) {
                 EmployeeAdapter employee = new EmployeeAdapter();
                 employee.setEmployeeID(rs.getString(1));

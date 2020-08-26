@@ -29,5 +29,11 @@
             <result name="success">/HRM/success.html</result>
             <result name="error">/HRM/error.html</result>
         </action>
+        <action name="searchemployeebyname" class="HRM.SearchEmployeeByNameAction">
+            <result name="success">/HRM/searchemployee.jsp</result>
+        </action>        
+         <action name="searchemployeebyid" class="HRM.SearchEmployeeByIdAction">
+            <result name="success">/HRM/searchemployee.jsp</result>
+        </action>        
     </package>
 </struts>
